@@ -1,12 +1,98 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Test Site</title>
-  </head>
-  
-  <body>
-    <h1>My First Website on Github Hosted
-  </body>
-    
-</html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    <title>NAV BAR IMPLEMENTATION</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="logo"><img src="logo.png" alt=""></li>
+                <li><a href="nav.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact-us.html">Contact Us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <div class="search">Search: <input type="search" name="search" id="search"
+                        placeholder="You can search here..."></div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>CURRENT PROGRESS</h1>
+        <p>SpaceX is established to ensure humanity will land on Mars by making Rapid Re-usable Rockets that are
+            advanced.</p>
+
+        <img src="spacex1.jpg" alt="error-loading-content! please check your connection...">
+        <img src="spacex2.jpg" alt="error-loading-content! please check your connection...">
+    </div>
+
+    <div class="wrapper">
+        <h1>FUTURE MISSIONS</h1>
+        <p>SpaceX has been working on developing the advanced rockets that will help in making us - Human a
+            Multi-Planetary Civilization. </p>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="starship.jpg">
+                    <img src="starship.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Starship heading to the moon</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="spacex5.jpg">
+                    <img src="spacex5.jpg" alt="error-loading...">
+                </a>
+                <div class="desc">Starship Rapid Re-usable: Mars and Beyond</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="spacex6.jpg">
+                    <img src="spacex6.jpg" alt="error-loading...">
+                </a>
+                <div class="desc">DragonShip with capable of Onboard Thruster</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="spacex3.jpg">
+                    <img src="spacex3.jpg" alt="error-loading... ">
+                </a>
+                <div class="desc">DragonShip Oribiting</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <p>All Right Reserved! @copyright 2021 - Sudan Dhungana</p>
+    </footer>
+</body>
+
+</html>
