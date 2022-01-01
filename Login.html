@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar li img {
+            width: auto;
+            height: 20px;
+
+        }
+        h1 {
+            text-align: center;
+        }
+        .navbar {
+            /*background-color:rgb(37, 34, 34);*/
+            background-color: black;
+            border-radius: 5px;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 10px;
+            padding-right: 30px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .search {
+            float: right;
+            color: whitesmoke;
+            padding: 10px;
+
+        }
+
+        .navbar input {
+            border-radius: 7px;
+            color: rgb(8, 6, 6);
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(104, 99, 99);
+            border-radius: 2px;
+        }
+
+        .login-form {
+            padding-top: 50px;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+    </style>
+    <title>Login</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="logo"><img src="logo.png" alt=""></li>
+                <li><a href="/nav.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact-us.html">Contact Us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <div class="search">Search: <input type="search" name="search" id="search"
+                        placeholder="You can search here..."></div>
+            </ul>
+        </nav>
+    </header>
+    <h1>LOGIN MENU</h1>
+    <div class="login-form">
+
+        <p>Email: <input type="email" name="email" id="email-us" placeholder="Enter your email address..."></p>
+        <p>password:<input type="password" name="password" id="pass" placeholder="Enter your password..."></p>
+        <br />
+        <p>Remember my login info: <input type="checkbox" name="logininfo" id="log-inf" placeholder="?"></p>
+        <input type="reset" value="Reset Login">
+        <p><input type="submit" name="submit" id="login"></p>
+       
+    </div>
+
+</body>
+
+</html>

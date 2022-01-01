@@ -1,0 +1,148 @@
+
+body {
+    background-image: url("spacex5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+        
+}
+.navbar li img {
+    width: auto;
+    height: 20px;
+    
+}
+
+.navbar {
+    /*background-color:rgb(37, 34, 34);*/
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    padding-right: 30px;
+  
+}
+.navbar ul {
+    overflow: auto;
+}  
+
+.navbar li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.search {
+    float: right;
+    color: whitesmoke;
+    padding: 10px;
+    
+}
+.navbar input {
+    border-radius: 7px;
+    color: rgb(8, 6, 6);
+
+}
+.navbar li a:hover {
+    background-color:rgb(104, 99, 99);
+    border-radius: 2px;
+}
+
+.container {
+    background-color:rgb(7, 5, 5);
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+
+.container img {
+    margin-left: 15px;
+    border-radius: 10px;   
+}
+
+h1, p {
+    padding: 5px;
+    margin: 10px;
+    
+    /*font-size: 10vw - vw stands for viewport width.  can be used to make responsive text size*/
+}
+
+/*@media screen and (max-width: 800px) {
+    .container, .navbar, img{
+      max-width: fit-content; /* The width is 100%, when the viewport is 800px or smaller 
+    }
+} can be used to make web page responsive.*/
+
+div.gallery {
+    border: 2px groove rgba(34, 25, 25, 0.712);
+    border-radius: 10px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid rgb(58, 52, 52);
+    border-radius: 10px;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    color: whitesmoke;
+    
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    
+  }
+  .responsive .gallery img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+  }
+  .wrapper {
+      background-color: rgb(10, 10, 10);
+      border-radius: 10px;
+      padding: 10px;
+      margin-left: 20px;
+      padding-top: 20px;
+      margin-top: 30px;
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .search, .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+      display:block;
+    }
+  }
+  
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+footer {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0;
+    
+}
