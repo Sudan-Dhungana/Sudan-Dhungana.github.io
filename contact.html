@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT ME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html" class="nav-logo">Sudan😍</a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="merch.html">MERCH</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="https://www.github.com/sudan-dhugana">GITHUB</a></li>
+            </ul>
+            <img src="/Images/menu.png" class="menu-icon" alt="menu icon --error loading">
+        </nav>
+    <div class="container">
+        <form action="" onsubmit="sendEmail(); reset(); return false;">
+            <h3>CONTACT ME</h3>
+
+            <input type="text" id="name" placeholder="Enter your name.." required>
+            <input type="email" id="email" placeholder="Enter your email.." required>
+            <input type="tel" id="phone" placeholder="Enter your phone no.." required>
+
+            <textarea name="" id="msg" cols="30" rows="4"></textarea>
+
+            <button type= "submit">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="Send_email.js"></script>
+    <footer>@CopyRight 2022</footer>
+    
+</body>
+</html>
