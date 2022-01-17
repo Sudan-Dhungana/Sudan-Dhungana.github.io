@@ -47,6 +47,7 @@ nav ul li a {
 nav ul li a:hover {
     border-bottom: 1px solid crimson;
     color: #24ff48;
+    transition: 0.5s;
 }
 /* .logo {
     cursor: pointer;
@@ -64,6 +65,7 @@ nav .nav-logo{
 .menu-icon {
     width: 35px;
     cursor: pointer;
+    filter: hue-rotate(-0.9turn);
 }
 
 /* -----text-box style--- */
@@ -84,8 +86,8 @@ nav .nav-logo{
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    color: #fff724;
-    border: 2px solid #fff724;
+    color: #e4e4e4;
+    border: 2px solid #36ff24;
     margin-top: 30px;
     border-radius: 6px;
 
@@ -94,7 +96,7 @@ nav .nav-logo{
 .text-box .cvdownload-btn {
     font-weight: 600;
     margin-left: 25px;
-    background: #fff724;
+    background: #74f8e7;
     color: #000;
 }
 
@@ -111,14 +113,13 @@ nav .nav-logo{
 }
 
 /* ---Contact Me---Form--- */
+
 .container {
     display: flex;
     width: 100%;
     height: 100vh;
     align-items:center;
     justify-content: center;
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Matrix-Backgrounds-Images-Download.jpg");
-    
 }
 
 form {
@@ -127,21 +128,25 @@ form {
     padding: 2vw 4vw;
     width: 30%;
     max-width: 600px;
-    border-radius: 10px;
-    background: #fff;
+    border-radius: 13px;
+    background:whitesmoke;
+    filter: drop-shadow(0px 0px 0.5rem lime);
 }
 
 form h3 {
-    color: #555;
-    font-weight: 800;
-    margin-bottom: 20px;
+    color: dimgray;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-size: 25px;
 }
 
 form input, form textarea {
-    border:none;
+    border: none;
+    border-bottom: 3px solid rgb(20, 220, 127);
+    border-left: 3px solid rgb(20, 197, 220);
     border-radius: 5px;
     margin: 10px 0;
-    padding: 20px;
+    padding: 10px;
     outline: none;
     font-size: 16px;
     background: whitesmoke;
