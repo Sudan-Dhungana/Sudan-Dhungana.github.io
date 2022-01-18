@@ -10,10 +10,7 @@
 .header {
     width: 100%;
     height: 100vh;
-    background-image: url("/Images/bg.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
+    background-image: #020412;
     color: whitesmoke;
     padding-left: 40px;
     padding-right: 40px;
@@ -89,11 +86,10 @@ nav .nav-logo{
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    color: black;
+    color: whitesmoke;
     border: 2px solid #36ff24;
     margin-top: 30px;
     border-radius: 6px;
-    background: crimson;
     filter: drop-shadow(0px 0px 0.5rem lime);
 
 }
