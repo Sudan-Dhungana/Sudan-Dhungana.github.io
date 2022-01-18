@@ -103,7 +103,7 @@ nav .nav-logo{
     font-weight: 600;
     margin-left: 25px;
     border: none;
-    filter: drop-shadow(0px 0px 0.5rem green)
+    filter: drop-shadow(0px 0px 0.5rem green);
     color: #000;
 }
 
