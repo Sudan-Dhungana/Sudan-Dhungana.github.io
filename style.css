@@ -77,9 +77,6 @@ nav .nav-logo{
     margin-top: 15%;
     font-size: 17px;
     letter-spacing: 1px;
-    color: black;
-    background: crimson;
-    filter: drop-shadow(0px 0px 0.5rem lime);
 
 }
 
@@ -92,10 +89,12 @@ nav .nav-logo{
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    color: #e4e4e4;
+    color: black;
     border: 2px solid #36ff24;
     margin-top: 30px;
     border-radius: 6px;
+    background: crimson;
+    filter: drop-shadow(0px 0px 0.5rem lime);
 
 }
 
