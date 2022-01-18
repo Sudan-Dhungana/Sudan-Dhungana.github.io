@@ -10,7 +10,10 @@
 .header {
     width: 100%;
     height: 100vh;
-    background: #020412;
+    background-image: url("/Images/bg.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
     color: whitesmoke;
     padding-left: 40px;
     padding-right: 40px;
