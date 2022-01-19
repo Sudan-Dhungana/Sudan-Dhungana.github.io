@@ -9,7 +9,7 @@
 }
 
 
-.header {
+body {
     width: 100%;
     height: 100vh;
     /* background: #020412; */
@@ -17,14 +17,12 @@
     color: whitesmoke;
     padding-left: 40px;
     padding-right: 40px;
-    position: relative;
-
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
+    margin-top: 30px;
     width: 100%;
     align-items: center;
     
@@ -32,30 +30,29 @@ nav {
 nav ul {
     flex: 1;
     text-align: right;
-    padding-right: 40px;
-    
-    
 }
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 0px;
     
 }
 
 nav ul li a {
+    margin-left: 30px;
     text-decoration: none;
     color: whitesmoke;
     letter-spacing: 1px;
     font-size: 17px;
-    padding-right: 5px;
     /* border-bottom: 1px solid green;border-right: 1px solid green; */
 }
 
 
 nav ul li a:hover {
-    border-bottom: 1px solid crimson;
-    color: #24ff48;
+    border-radius: 13px;
+    background: rgb(87, 230, 111);
+    padding: 5px;
+    color: black;
     transition: 0.5s;
 }
 .logo {
@@ -91,7 +88,7 @@ nav ul li a:hover {
 }
 
 .text-box h1 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 140px;
 }
 
@@ -99,18 +96,22 @@ nav ul li a:hover {
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    color: #e4e4e4;
-    border: 2px solid #36ff24;
+    color: #bce5f5;
+    /* border: 1px solid #36ff24; */
     margin-top: 30px;
     border-radius: 6px;
+    background: rgb(92, 109, 204);
 
 }
 
+.text-box a:hover {
+    filter: drop-shadow(0px 0px 1.5rem whitesmoke);
+}
+
 .text-box .cvdownload-btn {
-    font-weight: 600;
     margin-left: 25px;
     background: #74f8e7;
-    color: #000;
+    color: rgb(110, 101, 101);
     border: none;
 }
 
@@ -180,3 +181,84 @@ form button {
     cursor: pointer;
     
 }
+.mobile-menu {
+    display: none;
+}
+#open-menu {
+    display: none;
+}
+
+
+/* For Mobile Devices Screen */
+
+@media (max-width: 1080px) {
+    nav ul a {
+        display: none;
+    }
+
+    .logo {
+        height: 50px;
+        padding-left: 20px;
+    }
+    .text-box p {
+        font-style: italic;
+       
+    }
+    .text-box span {
+        font-size: 28px;
+    }
+    .text-box .contactbtn ,.cvdownload-btn{
+        position:fixed;
+        bottom: 5%;
+    }
+    .text-box .cvdownload-btn {
+        right: 8%;
+    }
+
+    .menu-icon {
+        height: 20px;
+        width: 25px;
+    }
+
+    .text-box a {
+        padding: 10px;
+        font-size: smaller;
+        font-weight: 100;
+    }
+    .text-box .cvdownload-btn {
+        font-size: smaller;
+        font-weight:100;
+        color: darkgreen;
+    }
+    .text-box {
+        margin-top: 25%;
+    }
+
+    #side-menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding: 40px 0px 0px 20px;
+        top: 0;
+        right: 0;
+        background: whitesmoke;
+        height: 100vh;
+    }
+    #side-menu a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+    .fa {
+        position: fixed;
+        top: 2%;
+        right: 5%;
+        color: black;
+        cursor: pointer;
+    }
+    #open-menu {
+        display: block;
+    }
+    
+}  
