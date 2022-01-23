@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT ME</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="header">
         <nav>
-            <a href="index.html" class="nav-logo">Sudan😍</a>
+            <a href="index.html"><img src="/Images/logo1.png" alt="" class="logo"></a>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME </a></li>
                 <li><a href="merch.html">MERCH</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="https://www.github.com/sudan-dhugana">GITHUB</a></li>
+                <li><a href="https://www.github.com/Sudan-Dhungana" target="_blank">GITHUB PROFILE</a></li>
             </ul>
-            <img src="/Images/menu.png" class="menu-icon" alt="menu icon --error loading">
+            <img src="/Images/menu.png" class="menu-icon" id="open-menu" alt="menu icon --error loading">
         </nav>
-    <div class="container">
-        <form action="" onsubmit="sendEmail(); reset(); return false;">
-            <h3>CONTACT ME</h3>
+        <!-- <img src="/Images/me.png" class="img-user" alt=""> -->
+    </div>
 
-            <input type="text" id="name" placeholder="Enter your name.." required>
-            <input type="email" id="email" placeholder="Enter your email.." required>
-            <input type="tel" id="phone" placeholder="Enter your phone no.." required>
 
-            <textarea name="" id="msg" cols="30" rows="4"></textarea>
+    <form action="" onsubmit="sendEmail(); reset(); return false;">
+        <h3>CONTACT ME</h3>
 
-            <button type= "submit">Send</button>
-        </form>
+        <input type="text" id="name" placeholder="Enter your name.." required>
+        <input type="email" id="email" placeholder="Enter your email.." required>
+        <input type="tel" id="phone" placeholder="Enter your phone no.." required>
+
+        <textarea name="" id="msg" cols="30" rows="4"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+
+    <div class="mobile-menu" id="side-menu">
+        <i class="fa fa-close fa-lg" id="close-menu"></i>
+        <a href="index.html">Home</a>
+        <a href="">Merch</a>
+        <a href="">About</a>
+        <a href="">Portfolio</a>
+        <a href="https://www.github.com/Sudan-Dhungana" target="_blank">Github</a>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="Send_email.js"></script>
-    <footer>@CopyRight 2022</footer>
-    
+    <script src="side-menu.js"></script>
+
 </body>
+
 </html>
