@@ -4,46 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="icon" href="Images/logo1.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive Grid Website</title>
+    <!-- Main CSS file for styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Material Icons for additional icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+    <!-- Google Fonts link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 </head>
 
 <body>
-    <div class="header">
-        <nav>
-            <a href="index.html"><img src="Images/logo1.png" alt="" class="logo"></a>
-            <ul>
-                <li><a href="index.html">HOME </a></li>
-                <li><a href="merch.html">MERCH</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="https://www.github.com/Sudan-Dhungana" target="_blank">GITHUB PROFILE</a></li>
+    <header> <!-- Header section -->
+        <nav class="navigation"> <!-- Navigation bar -->
+            <!-- Menu-icon-Nav -->
+            <input type="checkbox" id="menu-btn" class="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <a href="index.html" class="logo"> <!-- Logo link -->
+                Sudan.Dhungana
+            </a>
+            <ul class="menu"> <!-- Menu list -->
+                <li><a href="#" class="active">Home</a></li> <!-- Home link -->
+                <li><a href="#">Portfolio</a></li> <!-- Portfolio link -->
+                <li><a href="#">Blog</a></li> <!-- Blog link -->
+                <li><a href="#">Services</a></li> <!-- Services link -->
+                <li><a href="#">About</a></li> <!-- About link -->
+                <li><a href="#">Contact</a></li> <!-- Contact link -->
             </ul>
-            <img src="Images/menu.png" class="menu-icon" id="open-menu" alt="menu icon --error loading">
+            <a href="https://www.github.com/Sudan-Dhungana" class="nav-contact" target="_blank">Github Profile</a>
         </nav>
-        <img src="Images/earth.png" class="img-user" alt="">
-    </div>
-    <div class="text-box">
-        <h1>I'm <span class="auto-inp"></span></h1>
-        <p>For more info about my work and want to be a part of a learning fun community,<br> you can reach out to
-            me at facebook - Sudan Dhungana.</p>
-        <a href="contact.html" class="contactbtn">Contact Me</a>
-        <a href="" class="cvdownload-btn">Download CV</a>
-    </div>
+    </header> <!-- End of header -->
 
-    <div class="mobile-menu" id="side-menu">
-        <i class="fa fa-close fa-lg" id="close-menu"></i>
-        <a href="index.html">Home</a>
-        <a href="">Merch</a>
-        <a href="">About</a>
-        <a href="">Portfolio</a>
-        <a href="https://www.github.com/Sudan-Dhungana" target="_blank">Github</a>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="typingeffect.js"></script>
-    <script src="side-menu.js"></script>
+    <main class="main-grid"> <!-- Main grid section -->
+        <!-- Profile -->
+        <div class="profile-grid-box bg-free bg-gradient">
+            <div class="profile-box-img">
+                <img src="images/me.png" alt="profile">
+            </div>
+            <div class="profile-box-text">
+                <span>A Web/Software Developer</span> <!-- Profile title -->
+                <h1>Sudan Dhungana.</h1> <!-- Profile name -->
+                <p>I'm a passionate Web/Software Developer. I try to be up-to-date with technology knowledge. I find
+                    learning new things interesting. </p> <!-- Profile desc -->
+                <img src="images/icon.svg" alt="icon" /> <!-- Icon image -->
+            </div>
+        </div>
+        <!-- About Project -->
+        <div class="about-project-container bg-gradient"> <!-- About project container -->
+            <div class="marquee-grid-box bg-gradient"> <!-- Marquee box -->
+                <marquee behavior="alternate" direction="right" SCROLLAMOUNT="6" loop="infinite"> <!-- Marquee text -->
+                    <span>Latest Work And</span> Features - <span>Latest Work And</span><span> Features -</span>
+                    <span>Latest Work And</span> Features - <span>Latest Work And</span><span> Features -</span>
+                </marquee>
+            </div>
+            <!-- About -->
+            <div class="box-grid about-grid-box bg-gradient">
+                <img src="images/sign.png" alt="about" class="grid-box-img" /> <!-- About image -->
+                <div class="grid-text-container">
+                    <div class="grid-text">
+                        <span>More About Me</span>
+                        <strong>Resume</strong>
+                    </div>
+                    <div class="grid-icon">
+                        <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                        <img src="images/icon.svg" alt="icon" />
+                    </div>
+                </div>
+            </div>
+            <!-- Work -->
+            <div class="box-grid work-grid-box bg-gradient">
+                <img src="images/my-works.png" alt="work" class="grid-box-img" /> <!-- About image -->
+                <div class="grid-text-container">
+                    <div class="grid-text">
+                        <span>My ShowCase</span>
+                        <strong>Projects</strong>
+                    </div>
+                    <div class="grid-icon">
+                        <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                        <img src="images/icon.svg" alt="icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog -->
+        <div class="box-grid blog-grid bg-gradient">
+            <img src="images/gfonts.png" alt="blog" class="grid-box-img" /> <!-- Blog image -->
+            <div class="grid-text-container">
+                <div class="grid-text">
+                    <span>Blog</span>
+                    <strong>CSS Tricks</strong>
+                </div>
+                <div class="grid-icon">
+                    <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                    <img src="images/icon.svg" alt="icon" />
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+        <div class="box-grid service-grid bg-gradient">
+            <div class="service-icon">
+                <i class="material-icons">computer</i>
+                <i class="material-icons">code</i>
+                <i class="material-icons">build</i>
+                <i class="material-icons">design_services</i>
+                <i class="material-icons">settings</i>
+            </div>
+            <div class="grid-text-container">
+                <div class="grid-text">
+                    <span>Specialization</span>
+                    <strong>Service That We Offer</strong>
+                </div>
+                <div class="grid-icon">
+                    <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                    <img src="images/icon.svg" alt="icon" />
+                </div>
+            </div>
+        </div>
+        <!-- Social -->
+        <div class="box-grid social-grid bg-gradient">
+            <div class="social-container">
+                <a href="https://www.x.com/D_ConnectZone" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@DConnectZone" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <div class="grid-text-container">
+                <div class="grid-text">
+                    <span>Stay With Me</span>
+                    <strong>Connect With Us</strong>
+                </div>
+                <div class="grid-icon">
+                    <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                    <img src="images/icon.svg" alt="icon" />
+                </div>
+            </div>
+        </div>
+        <!-- Projects Total -->
+        <div class="box-grid project-count-grid bg-gradient">
+            <div class="grid-project-box bg-gradient">
+                <span>07</span>
+                <strong>Years Experience</strong>
+            </div>
+            <div class="grid-project-box bg-gradient">
+                <span>+125</span>
+                <strong>Client WorldWide</strong>
+            </div>
+            <div class="grid-project-box bg-gradient">
+                <span>+210</span>
+                <strong>Total Projects</strong>
+            </div>
+            <div class="grid-text">
+                <span>My Projects</span>
+                <strong>Total Projects</strong>
+            </div>
+            <div class="grid-icon">
+                <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                <img src="images/icon.svg" alt="icon" />
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="box-grid contact-grid bg-gradient">
+            <img class="contact-grid-top-icon" src="images/icon2.png" alt="contact" />
+            <h2>Let's<br /> Get Connected <span>Together!</span></h2>
+            <img src="images/icon.svg" alt="" />
+        </div>
+    </main>
+    <!-- End of main grid section -->
+    <!-- Footer Section -->
+    <footer class="footer bg-gradient"> <!-- Footer section -->
+        <div class="footer-text"> <!-- Footer text container -->
+            <p>© Copyright 2025- Sudan Dhungana. All rights reserved.<span>Vist the Links</span> </p>
+            <!-- Footer text -->
+        </div>
+        <div class="footer-icon"> <!-- Footer icon container -->
+            <a href="https://www.github.com/Sudan-Dhungana" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <!-- GitHub link -->
+            <a href="https://www.linkedin.com/in/sudan-dhungana/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a> <!-- LinkedIn link -->
+            <a href="https://www.facebook.com/sudandhungana" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <!-- Facebook link -->
+            <a href="https://www.instagram.com/sudandhungana/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a> <!-- Instagram link -->
+
+        </div>
+    </footer> <!-- End of footer section -->
+    <!-- JavaScript file for functionality -->
+    <script src="js/script.js"></script>
+    <!-- jQuery library for additional functionality -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- jQuery UI for additional functionality -->
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <!-- jQuery UI CSS for styling -->
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
 </body>
 
 </html>
